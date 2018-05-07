@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.daum.www.findfood.view.activity.B_FunctionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <FrameLayout
+            android:id="@+id/frame_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <ImageButton
+            android:id="@+id/function_talk_image"
+            style="@style/item_button"
+
+            android:layout_below="@+id/frame_layout_2"
+            android:layout_toStartOf="@+id/function_search_select"
+            android:foreground="@drawable/ic_add_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/function_camera_image"
+            style="@style/item_button"
+            android:layout_below="@+id/frame_layout_2"
+            android:layout_toStartOf="@+id/function_talk_image"
+            android:foreground="@drawable/ic_camera_alt_black_24dp"/>
+
+        <ImageButton
+            android:id="@+id/function_search_select"
+            android:layout_toStartOf="@+id/function_select"
+            android:foreground="@drawable/ic_search_black_24dp"
+            style="@style/item_button"
+           />
+
+        <ImageButton
+            android:id="@+id/function_select"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/frame_layout_2"
+            android:src="@drawable/float_button"
+            android:background="#00000000"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
